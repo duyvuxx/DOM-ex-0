@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM 0 Tab Module</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://site-assets.fontawesome.com/releases/v6.4.0/css/all.css"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- ionicons -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="./assets/js/main.js" defer></script>
+
+    <link rel="stylesheet" href="./assets/css/main.min.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="tab">
+        <div class="bar"></div>
+
+        <div class="tab-items" onclick="changeContent('react',this)">
+          <ion-icon name="code-slash"></ion-icon>
+          <span>React</span>
+        </div>
+        <div class="tab-items" onclick="changeContent('angular',this)">
+          <ion-icon name="settings"></ion-icon>
+          <span>Angular</span>
+        </div>
+        <div class="tab-items" onclick="changeContent('ember',this)">
+          <ion-icon name="add-circle"></ion-icon>
+          <span>Ember</span>
+        </div>
+        <div class="tab-items" onclick="changeContent('vue',this)">
+          <i class="fa-solid fa-pen-nib"></i>
+          <span>Vue.JS</span>
+        </div>
+      </div>
+
+      <div class="infor">
+        <div class="infor-items" id="react">
+          <h2>React</h2>
+          <p>
+            React makes it painless to create interactive UIs. Design simple
+            views for each state in your application, and React will efficiently
+            update and render just the right components when your data changes.
+          </p>
+        </div>
+        <div class="infor-items" id="angular">
+          <h2>Angular</h2>
+          <p>
+            Angular is an application design framework and development platform
+            for creating efficient and sophisticated single-page apps.
+          </p>
+        </div>
+        <div class="infor-items" id="ember">
+          <h2>Ember</h2>
+          <p>
+            Ember.js is a productive, battle-tested JavaScript framework for
+            building modern web applications. It includes everything you need to
+            build rich UIs that work on any device.
+          </p>
+        </div>
+        <div class="infor-items" id="vue">
+          <h2>Vue.JS</h2>
+          <p>
+            Vue (pronounced /vju:/, like view) is a progressive framework for
+            building user interfaces. Unlike other monolithic frameworks, Vue is
+            designed from the ground up to be incrementally adoptable.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
