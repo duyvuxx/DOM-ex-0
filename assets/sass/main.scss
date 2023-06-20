@@ -95,6 +95,10 @@ ul {
 
       position: relative;
 
+      &.active {
+        opacity: 1;
+      }
+
       [name],
       i,
       span {
@@ -127,6 +131,8 @@ ul {
     padding: 2rem;
 
     &-items {
+      display: none;
+
       h2 {
         margin-bottom: 1rem;
         font-family: "poppins-bold", sans-serif;
@@ -136,8 +142,8 @@ ul {
         font-family: "poppins-thin", sans-serif;
       }
 
-      &:not(:first-child) {
-        display: none;
+      &.active {
+        display: block;
       }
     }
   }

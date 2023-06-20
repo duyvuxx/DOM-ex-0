@@ -92,6 +92,9 @@ ul {
   will-change: opacity, background-color;
   position: relative;
 }
+.container .tab-items.active {
+  opacity: 1;
+}
 .container .tab-items [name],
 .container .tab-items i,
 .container .tab-items span {
@@ -121,6 +124,9 @@ ul {
 .container .infor {
   padding: 2rem;
 }
+.container .infor-items {
+  display: none;
+}
 .container .infor-items h2 {
   margin-bottom: 1rem;
   font-family: "poppins-bold", sans-serif;
@@ -128,6 +134,6 @@ ul {
 .container .infor-items p {
   font-family: "poppins-thin", sans-serif;
 }
-.container .infor-items:not(:first-child) {
-  display: none;
+.container .infor-items.active {
+  display: block;
 }
